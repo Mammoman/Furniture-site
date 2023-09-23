@@ -1,135 +1,595 @@
-<!DOCTYPE html>
+<DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;1,300&display=swap" rel="stylesheet">
-        <title>Page Title</title>
-<style>
-    .covering{
-    background-color:white;
-    padding-top:20px;
-        border-radius:15px;
-        position:relative;
-        z-index:200;
-    }
-    .top-section{
-        display:flex;
-        padding-left:10px;
-       padding-bottom:10px;
-       justify-content:start;
-         align-items:center;       
-    }
-    .back-button{
-    background-color:white; 
-     border:none;
-    margin-right:60px;
-    cursor:pointer;
-    position:relative;
-    transition:box-shadow 0.15s
-      0.15s;
-    }
-    .back-button:active{
-          opacity:0.6;
-                }
-    .back-button:hover{
-        box-shadow:5px 5px 5px rgba(0 , 0, 0, 0.5);
-    }
 
-    .back-icon{
-        width:50px;
-    }
-    .order-text{
-    font-family:Raleway; 
-    font-weight:500;
-        font-size:25px;
-        margin-left:0;
-    }
-    .bell-img{
-     margin-top:0;
-    margin-bottom:20px;
-        width:200px;
-    }
-    .sad-motivation{
-     font-family:Raleway; 
-    font-weight:500;
-    font-size:20px;
- margin-top:0;  
-        margin-bottom:20px;
-    }
-    .sad-text{
-    font-family:Raleway italic; 
-    font-weight:300;
-        font-size:16px;
-        color:grey;
-        margin-bottom:40px;
-        margin-left:20px;
-        margin-right:20px;
-        
-    }
-    .checkout-button{
-        background-color:black;
-        border:none;
-        border-radius:20px;
-        color:white;
-        font-size:20px;
-         font-family:Raleway; 
-        font-weight:500;
-        margin-bottom:50px;
-        padding-top:10px;
-        padding-bottom:10px;
-        padding-left:15px;
-        padding-right:15px;
-        cursor:pointer;
-        transition:background-color 0.2s,
-                    0.2s;
-    }
-    .checkout-button:hover{
-         box-shadow:7px 7px 7px rgba(0 , 0, 0, 0.5);
-          }
-      .checkout-button:active{
-                    opacity:0.6;
-                }
-    }
-</style>
-    </head>
-    <body style=
-    "background-color:rgb(220,220,220);
-    padding-left:30px;
-    padding-right:30px;
-    padding-top:50px;
-    text-align:center;">
-        
-<div class="covering">
-    <div class="top-section">
-        <div>            
-        <button class="back-button" >    
-        <img class="back-icon"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR-pU7fuZbkfn9MFuNFbNWjw9kNrh1yOs0Xw&usqp=CAU"></button>
-        </div>
-        <div class="order-text">My order</div>
-    </div>
-    <hr>
-    <div class="img-1">
-        <img class="bell-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZZLnLKmqPevLl05DsgJFsbloDngrM7WPTAw&usqp=CAU">
-    </div>
-    <div class="sad-motivation">
-        Oops! Let's get some food man
-    </div>
-    <div class="sad-text">
-            You haven't eaten since morning and you are here talking and looking like shit
-    </div>
-    <div>
-        <button class="checkout-button"> 
-     Buy more meals
- </button>
-        
-    </div>
-</div>
+        <title>Furniture site</title>
+        <style>    
+       body {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVh4IMjgG106tT8CZrUTz33NwPr-UG2VX-aw&usqp=CAU");
  
+}
+
+@media screen and (min-width: 480px) {
+  body {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr3w_aI8W6qAiViejdimIGt8ilxh6ZCJsI3Q&usqp=CAU");
+    width:1200px;
+  }
+}
+        
+        .whole{ 
+            margin-left:px;
+            margin-right:3px;
+        }    
+        @media screen and (min-width:480px){
+            .whole{
+                margin-left:100px;
+                margin-right:50px;
+            }
+        }
+            .top{
+                display:flex;
+                       justify-content:space-between;
+                       flex-direction:row;
+                       align-items:center;
+                       width:400px;
+                       height:50px;
+                }
+                @media screen and (min-width: 480px) {
+  .top{
+                       width:1000px;
+                       height:50px;
+  }
+}
+         
+            .top-img-center,.top-right, .top-left{ 
+             display:flex;
+             flex-direction:row;
+                justify-content:space-between;
+                align-items:center;
+                height:50px;          
+                
+            }
+            
+            .top-l1, .top-l2, .top-l3, .top-l4, .top-l5{
+                font-size:8px;
+                color:white;
+               font-family:Raleway;
+                margin-left:3px;
+                margin-right:2px;
+                cursor:pointer;
+                transition:0.15s;
+            }
+            @media screen and (min-width: 480px) {
+                          .top-l1, .top-l2, .top-l3, .top-l4, .top-l5{
+                              font-size:20px;
+                              color:black
+                          }                          
+            }
+                    
+            .top-l1:hover{
+                    text-decoration:underline;
+            font-size:10px;
+                color:rgb(247, 234, 168);     
+            }
+            @media screen and (min-width:480px) {
+                .top-l1:hover{
+                    font-size:28px;
+                    text-decoration:underline;
+                    color:rgb(245, 213, 32)
+                    
+                }
+            }
+                .top-l2:hover{        
+                text-decoration:underline;
+            font-size:10px;
+                color:rgb(247, 234, 168);     
+            }
+                 @media screen and (min-width:480px) {
+                .top-l2:hover{
+                    font-size:28px;
+                          color:rgb(245, 213, 32)
+                }
+            }
+                .top-l3:hover{
+                        text-decoration:underline;
+            font-size:10px;
+            color:rgb(247, 234, 168);         
+            }
+                 @media screen and (min-width:480px) {
+                .top-l3:hover{
+                    font-size:28px;
+                          color:rgb(245, 213, 32)
+                }
+            }
+                .top-l4:hover{
+                        text-decoration:underline;
+            font-size:10px;
+                color:rgb(247, 234, 168);             
+            } 
+                 @media screen and (min-width:480px) {
+                .top-l4:hover{
+                    font-size:28px;
+                          color:rgb(245, 213, 32)
+                }
+            }
+                .top-l5:hover{
+                        text-decoration:underline;
+            font-size:10px;
+                color:rgb(247, 234, 168);        
+            }       
+                 @media screen and (min-width:480px) {
+                .top-l5:hover{
+                    font-size:28px;
+                          color:rgb(245, 213, 32)
+                }
+            }     
+            .top-r1, .top-r2, .top-r3{
+                font-size:8px;
+                color:white;
+               font-family:Raleway;
+                margin-left:3px;
+                margin-right:2px;
+                transition:0.15s;
+            }
+                 @media screen and (min-width:480px) {
+               .top-r1, .top-r2, .top-r3{
+                    font-size:20px;
+                    color:black;
+                }
+            }
+           
+            
+                .top-r1:hover{
+            text-decoration:underline;
+            font-size:10px;
+                color:rgb(247, 234, 168);     
+            }
+              @media screen and (min-width:480px) {
+               .top-r1:hover{
+                    font-size:28px;
+                          color:rgb(245, 213, 32)
+                }
+            }
+            
+                .top-r2:hover{
+                          text-decoration:underline;
+            font-size:10px;
+                color:rgb(247, 234, 168);               
+            }
+                @media screen and (min-width:480px) {
+               .top-r2:hover{
+                    font-size:28px;
+                          color:rgb(245, 213, 32)
+                }
+            }
+                .top-r3:hover{
+                          text-decoration:underline;
+            font-size:10px;
+                color:rgb(247, 234, 168);    
+                      
+            }
+                @media screen and (min-width:480px) {
+               .top-r3:hover{
+                    font-size:28px;
+                          color:rgb(245, 213, 32)
+                }
+            }
+            
+            .cart-icon{
+                margin-left:3px;
+                margin-top:4px;
+                width:30px;
+            }
+                @media screen and (min-width:480px) {
+               .cart-icon{
+                    width:80px;
+                }
+            }
+            .main-div{
+                position:relative;
+            }
+            .big-img-img{
+             margin-top:10px;
+                width:400px;        
+            
+            }
+                 @media screen and (min-width: 480px) {
+  .big-img-img{
+                       width:1000px;
+    
+  }
+}
+            .pic-txt{
+                position:absolute;
+                width:250px;
+                height:250px;
+                top:80px; 
+                left:10px;
+            }
+            @media screen and (min-width:480px){
+                .pic-txt{
+                position:absolute;
+                width:250px;
+                top:150px; 
+                left:10px;
+            }            
+            }
+            .big-img-txt{
+            font-family:Raleway;
+            color:black;
+                line-height:70px;
+                font-size:40px;
+                margin-bottom:10px;
+            }
+            @media screen and (min-width:480px){
+                       .big-img-txt{
+            font-family:Raleway;
+            color:black;
+                line-height:120px;
+                font-size:120px;
+                margin-bottom:10px;
+                animation-name: shine;
+  animation-duration: 4s;
+  animation-delay:1s;
+  animation-iteration-count: infinite;
+            }
+            @keyframes shine{
+  from {color: black;}
+  to {color: yellow;}
+}
+            }
+            .big-img-button{
+                margin-top:20px;
+                position:absolute;
+                top:270px; 
+                left:10px;
+            }
+            @media screen and (min-width:480px){
+                .big-img-button{
+                display:flex;
+                position:absolute;   
+                margin-top:20px;     
+                top:750px; 
+                left:30px;
+            }            
+            }
+
+            .shop-button{            
+            border:1px solid rgb(222,194,135);
+            font-size:20px;
+            text-decoration:none;
+        
+            padding-top:10px;
+            padding-bottom:10px;
+            padding-left:15px;
+            padding-right:15px;
+            color:white;
+            cursor:pointer;
+            font-family:Raleway; 
+                transition: 0.5s ease-out;
+    }
+            @media screen and (min-width:480px){
+                      .shop-button{            
+              border:1px solid rgb(222,194,135);
+            font-size:20px;
+            text-decoration:none;
+            margin-top:30px;
+            padding-top:25px;
+            padding-bottom:25px;
+            padding-left:30px;
+            padding-right:30px;
+            color:white;
+            cursor:pointer;
+            font-family:Raleway; 
+                transition: 0.5s ease-out;
+            }
+            }
+            
+            .shop-button:hover{
+              padding-top:15px;
+            padding-bottom:15px;
+            padding-left:25px;
+            border:1px solid rgb(212,194,120);
+            padding-right:25px;
+            font-size:25px;
+             background-color:rgb(222,194,135);
+      }
+   
+              @media screen and (min-width: 480px) {
+                    .shop-button:hover{
+              padding-top:35px;
+            background-color:rgb(222,194,135);
+            padding-bottom:35px;
+            padding-left:65px;
+            padding-right:65px;
+            font-size:45px;
+            
+            }
+  .dnd-img{
+                       margin-top:20px;
+                margin-bottom:25px;
+                position:relative;
+               z-index:100;
+                
+  }
+}
+                   .dnd-img{
+               margin-top:10px;
+                margin-bottom:15px;
+                position:relative;
+               z-index:100;
+            }
+            
+            .big-img2{
+                width:400px;
+                postion:relative;            
+            }
+              @media screen and (min-width: 480px) {
+  .big-img2{
+                       width:1000px;
+                
+  }
+}
+            .cover-text{
+            display:flex;
+            flex-direction:column;
+                background-color:chocolate;
+                height:200px;
+                width:150px;
+                position:absolute;
+                top:10px;
+                left:20px;
+                padding-top:50px;     
+            }
+              @media screen and (min-width: 480px) {
+     .cover-text{
+            display:flex;
+            flex-direction:column;
+                background-color:chocolate;
+                height:480px;
+                width:300px;
+                position:absolute;
+                top:10px;
+                left:150px;
+                padding-top:100px;     
+            }
+}
+                       .cover-1,.cover-2,.cover-butt{
+                margin-left:7px;
+            }
+              @media screen and (min-width: 480px) {
+ cover-1,.cover-2,.cover-butt{
+                margin-left:15px;
+            }
+}
+            .cover-1{
+            font-family:Raleway;
+                color:white;
+                font-size:15px;
+                margin-top:35px;
+            }
+              @media screen and (min-width: 480px) {
+.cover-1{
+            font-family:Raleway;
+                color:white;
+                font-size:20px;
+                margin-top:70px;
+            }
+}
+            .cover-2{
+            font-family:Raleway;
+            margin-top:6px;
+                color:white;
+                font-size:20px;
+                line-height:35px;
+            }
+              @media screen and (min-width: 480px) {
+ .cover-2{
+            font-family:Raleway;
+            margin-top:15px;
+                color:white;
+                font-size:35px;
+                line-height:60px;
+            }
+}
+         .cover-butt{
+            font-family:Raleway;
+                backgroung-color:silver;
+                padding-top:10px;
+                padding-bottom:10px;
+                padding-left:20px;
+                padding-right:20px;
+                border:none;
+                margin-top:8px;
+                font-size:15px;
+                cursor:pointer;
+            }
+                     @media screen and (min-width: 480px) {
+             .cover-butt{
+            font-family:Raleway;
+                backgroung-color:silver;
+                padding-top:20px;
+                padding-bottom:20px;
+                padding-left:35px;
+                padding-right:35px;
+                border:none;
+                margin-top:15px;
+                font-size:25px;
+                cursor:pointer;
+            }
+            }
+            
+                        .mul-img{
+                display:grid;
+                width:400px;
+                grid-template-columns: 150px 150px; 
+                column-gap:50px;
+                border:1px dotted red;
+            }
+            @media screen and (min-width:480px){
+                   .mul-img{
+                display:grid;
+                width:1000px;
+                grid-template-columns: 450px 450px; 
+                column-gap:50px;
+                row-gap:40px;
+            }
+            }
+            .img1-grid{
+                position:relative;
+            z-index:1000;
+            }
+            @media screen and (min-width:480px){
+                 .img1-grid{
+                position:relative;
+            z-index:1000; 
+            }
+            }
+            .img-1{
+            width:200px;
+            cursor:pointer;
+            }
+            @media screen and (min-width:480px){
+                  .img-1{
+            width:500px;
+            cursor:pointer;
+            }
+            }
+            .img1-text-button{
+               background-color:white;
+               border-color:black;
+               font-family:Raleway;
+               font-weight:500px;
+               font-size:6px;
+                padding-top:10px;
+                padding-bottom:10px;
+                padding-left:35px;
+                padding-right:35px;
+                border:grey;
+                position:absolute;
+                top:150px;
+                left:10px;
+                cursor:pointer;
+                transition: 0.5s;
+            }
+            @media screen and (min-width:480px){
+                     .img1-text-button{
+               background-color:white;
+               border-color:black;
+               font-family:Raleway;
+               font-size:20px;
+                padding-top:20px;
+                padding-bottom:20px;
+                padding-left:35px;
+                padding-right:35px;
+                border:grey;
+                position:absolute;
+                top:300px;
+                left:30px;
+                cursor:pointer;
+                transition: 0.5s;
+            } 
+            }
+              .img1-grid:hover .img1-text-button{
+              background-color:tomato;
+                  color:white;
+              }
+              @media screen and (min-width:480px){
+                  .img1-grid:hover .img1-text-button{
+              background-color:beige; 
+                  color:black;
+              }
+              }
+            
+</style>
+<body>
+    
+    <div class="whole">      
+          <div class="top">
+          
+          <div class="top-left">
+              <div class="top-l1">SALE</div>
+              <div class="top-l2">SHOP</div>
+              <div class="top-l3">OUR STORY</div>
+              <div class="top-l4">CUSTOMERS</div>
+              <div class="top-l5">BLOG</div>
+              </div>
+              
+        <div class="top-img-center">            
+        <img src=        alt=img>            
+            </div>
+            
+        <div class="top-right">
+            <div class="top-r1">FAQ</div>
+            <div class="top-r2">CONTACT</div>
+            <div class="top-r3">MY CART</div>
+            <div >              
+            <img class="cart-icon" src="https://images.rawpixel.com/image_350/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL2pvYjE0MjgtZWxlbWVudC0xMTdfMS5qcGc.jpg">                
+           </div>
+               <div class="profile">               
+           <img src=>               
+               </div>               
+        </div>
+        
+          </div>
+          
+          <div class="main-div">
+          <div class="big-img">
+              <img class="big-img-img" src="https://www.bhg.com/thmb/7uIpZUz4TDpVHeazZ6ZzMCC-rc4=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/english-ivy-plants-floating-shelf-394600cb-2892997e95684bcf91d57be17ecd9d4d.jpg">
+          </div>
+          <div class="pic-txt">
+                <div class="big-img-txt">IN TUNE WITH THE ARTS</div>                 
+          </div>          
+           <div class="big-img-button"> 
+            <a href=# class="shop-button">SHOP NOW</a></div>     
+        </div>                 
+    
+    
+          <div class="dnd-img">
+            <img  class="big-img2 "src="https://images.unsplash.com/photo-1540574163026-643ea20ade25?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y291Y2h8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=700&q=60">
+            <div class="cover-text">
+                <div class="cover-1">- NEW ARRIVALS</div>
+                <div class="cover-2">SUMMER 18 COLLECTIONS</div>
+                <div class="cover-button">                    
+             <button class="cover-butt">SHOP NOW</button></div>
+            </div>
+        </div>
         
         
-        
-    </body>
-</html>    
-    </body>
-</html>
+        <div class="mul-img">
+              <div class="img1-grid">
+              <img class="img-1" src="https://images.unsplash.com/photo-1575501265016-ae78c708a09c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y291Y2h8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=700&q=60">
+              <button class="img1-text-button">CREATIVE-IDEAS</button>
+          </div>
+          <div class="img1-grid">
+              <img class="img-1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6qUwZTTusXZZIzL3w-xn2UwHOaCByRJtIXQ&usqp=CAU">          
+       <button class="img1-text-button">HOME DECOR</button> 
+          </div>
+          <div class="img1-grid">
+              <img class="img-1"
+src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2cVYVnFBHgluS_abcGR-s-iZ7n9y46fElnA&usqp=CAU">  
+     <button class="img1-text-button">THROW + PILLOWS</button>
+          </div>
+          <div class="img1-grid">
+              <img class="img-1"
+src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSKycdRyD8UcifZT4dgZ4vBGvYOaGLiaK2_w&usqp=CAU">        
+          <button class="img1-text-button">QUILTS</button>
+          </div>
+    
+          </div>
+ 
+    
+    
+    
+    
+    
+    
+    
+    
+</body>
+    </html>
