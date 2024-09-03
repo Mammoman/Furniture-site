@@ -1,1103 +1,160 @@
-<DOCTYPE html>
-<html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Furniture Site</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;1,300&display=swap" rel="stylesheet">
-
-        <title>Furniture site</title>
-        <style>    
-       body {
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVh4IMjgG106tT8CZrUTz33NwPr-UG2VX-aw&usqp=CAU");
- 
-}
-
-@media screen and (min-width: 480px) {
-  body {
-    background-image: url("https://img.freepik.com/free-vector/gradient-geometric-purple-shapes-dark-background_23-2148423872.jpg?w=740&t=st=1695749456~exp=1695750056~hmac=2c5352d8fe978a560cda82f6d630327d666d6782e6c77d6bfbf282be9f6de74e");
-    width:1200px;
-  }
-}
-        
-        .whole{ 
-            margin-left:px;
-            margin-right:3px;
-        }    
-        @media screen and (min-width:480px){
-            .whole{
-                margin-left:100px;
-                margin-right:50px;
-            }
-        }
-            .top{
-                display:flex;
-                       justify-content:space-between;
-                       flex-direction:row;
-                       align-items:center;
-                       width:400px;
-                       height:50px;
-                }
-                @media screen and (min-width: 480px) {
-  .top{
-                       width:1000px;
-                       height:50px;
-  }
-}
-         
-            .top-img-center,.top-right, .top-left{ 
-             display:flex;
-             flex-direction:row;
-                justify-content:space-between;
-                align-items:center;
-                height:50px;          
-                
-            }
-            
-            .top-l1, .top-l2, .top-l3, .top-l4, .top-l5{
-                font-size:8px;
-                color:white;
-               font-family:Raleway;
-                margin-left:3px;
-                margin-right:2px;
-                cursor:pointer;
-                transition:0.15s;
-            }
-            @media screen and (min-width: 480px) {
-                          .top-l1, .top-l2, .top-l3, .top-l4, .top-l5{
-                              font-size:20px;
-                              color:yellow;
-                          }                          
-            }
-                    
-            .top-l1:hover{
-                    text-decoration:underline;
-            font-size:10px;
-                color:rgb(247, 234, 168);     
-            }
-            @media screen and (min-width:480px) {
-                .top-l1:hover{
-                    font-size:28px;
-                    text-decoration:underline;
-                    color:white;
-                    
-                }
-            }
-                .top-l2:hover{        
-                text-decoration:underline;
-            font-size:10px;
-                color:rgb(247, 234, 168);     
-            }
-                 @media screen and (min-width:480px) {
-                .top-l2:hover{
-                    font-size:28px;
-                          color:white;
-                }
-            }
-                .top-l3:hover{
-                        text-decoration:underline;
-            font-size:10px;
-            color:rgb(247, 234, 168);         
-            }
-                 @media screen and (min-width:480px) {
-                .top-l3:hover{
-                    font-size:28px;
-                          color:white;
-                }
-            }
-                .top-l4:hover{
-                        text-decoration:underline;
-            font-size:10px;
-                color:rgb(247, 234, 168);             
-            } 
-                 @media screen and (min-width:480px) {
-                .top-l4:hover{
-                    font-size:28px;
-                          color:white;
-                }
-            }
-                .top-l5:hover{
-                        text-decoration:underline;
-            font-size:10px;
-                color:rgb(247, 234, 168);        
-            }       
-                 @media screen and (min-width:480px) {
-                .top-l5:hover{
-                    font-size:28px;
-                          color:white;
-                }
-            }     
-            .top-r1, .top-r2, .top-r3{
-                font-size:8px;
-                color:white;
-               font-family:Raleway;
-                margin-left:3px;
-                margin-right:2px;
-                transition:0.15s;
-            }
-                 @media screen and (min-width:480px) {
-               .top-r1, .top-r2, .top-r3{
-                    font-size:20px;
-                    color:yellow;
-                }
-            }
-           
-            
-                .top-r1:hover{
-            text-decoration:underline;
-            font-size:10px;
-                color:rgb(247, 234, 168);     
-            }
-              @media screen and (min-width:480px) {
-               .top-r1:hover{
-                    font-size:28px;
-                          color:white;
-                }
-            }
-            
-                .top-r2:hover{
-                          text-decoration:underline;
-            font-size:10px;
-                color:rgb(247, 234, 168);               
-            }
-                @media screen and (min-width:480px) {
-               .top-r2:hover{
-                    font-size:28px;
-                          color:white;
-                }
-            }
-                .top-r3:hover{
-                          text-decoration:underline;
-            font-size:10px;
-                color:rgb(247, 234, 168);    
-                      
-            }
-                @media screen and (min-width:480px) {
-               .top-r3:hover{
-                    font-size:28px;
-                          color:white;
-                }
-            }
-            
-            .cart-icon{
-                margin-left:3px;
-                margin-top:4px;
-                width:30px;
-            }
-                @media screen and (min-width:480px) {
-               .cart-icon{
-                    width:80px;
-                }
-            }
-            .main-div{
-                position:relative;
-            }
-            .big-img-img{
-             margin-top:10px;
-                width:400px;        
-            
-            }
-                 @media screen and (min-width: 480px) {
-  .big-img-img{
-                       width:1000px;
-    
-  }
-}
-           .pic-txt{
-                position:absolute;
-                width:250px;
-                height:250px;
-                top:80px; 
-                left:10px;
-            }
-            @media screen and (min-width:480px){
-                .pic-txt{
-                position:absolute;
-                width:250px;
-                top:150px; 
-                left:10px;
-            }            
-            }
-            .big-img-txt{
-            font-family:Raleway;
-            color:white;
-                line-height:70px;
-                font-size:40px;
-                margin-bottom:10px;
-            }
-            @media screen and (min-width:480px){
-                       .big-img-txt{
-            font-family:Raleway;
-            color:black;
-                line-height:120px;
-                font-size:120px;
-                margin-bottom:10px;
-                animation-name: shine;
-  animation-duration: 4s;
-  animation-delay:1s;
-  animation-iteration-count: infinite;
-            }
-            @keyframes shine{
-  from {color: black;}
-  to {color: yellow;}
-}
-            }
-            .big-img-button{
-                margin-top:20px;
-                position:absolute;
-                top:270px; 
-                left:10px;
-            }
-            @media screen and (min-width:480px){
-                .big-img-button{
-                display:flex;
-                position:absolute;   
-                margin-top:20px;     
-                top:750px; 
-                left:30px;
-            }            
-            }
-
-            .shop-button{            
-            border:1px solid rgb(222,194,135);
-            font-size:20px;
-            text-decoration:none;     
-            padding-top:10px;
-            padding-bottom:10px;
-            padding-left:15px;
-            padding-right:15px;
-            color:white;
-            cursor:pointer;
-            font-family:Raleway; 
-                transition: 0.5s ease-out;
-    }
-
-            @media screen and (min-width:480px){
-                      .shop-button{            
-              border:1px solid rgb(222,194,135);
-            font-size:20px;
-            text-decoration:none;
-            margin-top:30px;
-            padding-top:25px;
-            padding-bottom:25px;
-            padding-left:30px;
-            padding-right:30px;
-            color:white;
-            cursor:pointer;
-            font-family:Raleway; 
-                transition: 0.5s ease-out;
-            }
-            }
-            
-            .shop-button:hover{
-              padding-top:15px;
-            padding-bottom:15px;
-            padding-left:25px;
-            border:1px solid rgb(212,194,120);
-            padding-right:25px;
-            font-size:25px;
-             background-color:rgb(222,194,135);
-      }
-   
-              @media screen and (min-width: 480px) {
-                    .shop-button:hover{
-              padding-top:35px;
-            background-color:rgb(222,194,135);
-            padding-bottom:35px;
-            padding-left:65px;
-            padding-right:65px;
-            font-size:45px;
-            
-            }
-  .dnd-img{
-                       margin-top:20px;
-                margin-bottom:25px;
-                position:relative;
-               z-index:100;
-                
-  }
-}
-                   .dnd-img{
-               margin-top:10px;
-                margin-bottom:15px;
-                position:relative;
-               z-index:100;
-            }
-            
-            .big-img2{
-                width:400px;
-                postion:relative;            
-            }
-              @media screen and (min-width: 480px) {
-  .big-img2{
-                       width:1000px;
-                
-  }
-}
-            .cover-text{
-            display:flex;
-            flex-direction:column;
-                background-color:chocolate;
-                height:200px;
-                width:150px;
-                position:absolute;
-                top:10px;
-                left:20px;
-                padding-top:50px;     
-             }
-              @media screen and (min-width: 480px) {
-     .cover-text{
-            display:flex;
-            flex-direction:column;
-                background-color:chocolate;
-                height:480px;
-                width:300px;
-                position:absolute;
-                top:10px;
-                left:150px;
-                padding-top:100px;     
-            }
-}
-                       .cover-1,.cover-2,.cover-butt{
-                margin-left:7px;
-            }
-              @media screen and (min-width: 480px) {
- cover-1,.cover-2,.cover-butt{
-                margin-left:15px;
-            }
-}
-            .cover-1{
-            font-family:Raleway;
-                color:white;
-                font-size:15px;
-                margin-top:35px;
-            }
-              @media screen and (min-width: 480px) {
-.cover-1{
-            font-family:Raleway;
-                color:white;
-                font-size:20px;
-                margin-top:70px;
-            }
-}
-            .cover-2{
-            font-family:Raleway;
-            margin-top:6px;
-            color:white
-                font-size:20px;
-                line-height:35px;
-            }
-              @media screen and (min-width: 480px) {
- .cover-2{
-            font-family:Raleway;
-            margin-top:15px;
-                color:white;
-                font-size:35px;
-                line-height:60px;
-            }
-}
-         .cover-butt{
-            font-family:Raleway;
-                backgroung-color:silver;
-                padding-top:10px;
-                padding-bottom:10px;
-                padding-left:20px;
-                padding-right:20px;
-                border:none;
-                margin-top:8px;
-                font-size:15px;
-                cursor:pointer;
-            }
-                     @media screen and (min-width: 480px) {
-             .cover-butt{
-            font-family:Raleway;
-                backgroung-color:silver;
-                padding-top:20px;
-                padding-bottom:20px;
-                padding-left:35px;
-                padding-right:35px;
-                border:none;
-                margin-top:15px;
-                font-size:25px;
-                cursor:pointer;
-            }
-            }
-            
-                        .mul-img{
-                display:grid;
-                width:400px;
-                grid-template-columns: 150px 150px; 
-                column-gap:50px;
-                border:1px dotted red;
-            }
-            @media screen and (min-width:480px){
-                   .mul-img{
-                display:grid;
-                width:1000px;
-                grid-template-columns: 450px 450px; 
-                column-gap:50px;
-                row-gap:40px;
-            }
-            }
-            .img1-grid{
-                position:relative;
-            z-index:1000;
-            }
-            @media screen and (min-width:480px){
-                 .img1-grid{
-                position:relative;
-            z-index:1000; 
-            }
-            }
-            .img-1{
-            width:200px;
-            cursor:pointer;
-            }
-            @media screen and (min-width:480px){
-                  .img-1{
-            width:500px;
-            cursor:pointer;
-            }
-            }
-            .img1-text-button{
-               background-color:white;
-               border-color:black;
-               font-family:Raleway;
-               font-weight:500px;
-               font-size:6px;
-                padding-top:10px;
-                padding-bottom:10px;
-                padding-left:35px;
-                padding-right:35px;
-                border:grey;
-                position:absolute;
-                top:150px;
-                left:10px;
-                cursor:pointer;
-                transition: 0.5s;
-            }
-            @media screen and (min-width:480px){
-                     .img1-text-button{
-               background-color:white;
-               border-color:black;
-               font-family:Raleway;
-               font-size:20px;
-                padding-top:20px;
-                padding-bottom:20px;
-                padding-left:35px;
-                padding-right:35px;
-                border:grey;
-                position:absolute;
-                top:300px;
-                left:30px;
-                cursor:pointer;
-                transition: 0.5s;
-            } 
-            }
-              .img1-grid:hover .img1-text-button{
-              background-color:tomato;
-                  color:white;
-              }
-              @media screen and (min-width:480px){
-                  .img1-grid:hover .img1-text-button{
-              background-color:tomato;
-                  color:black;
-              }
-              }
-              
-              
-                   .alone-txt2{
-                          display:flex;
-                  justify-content:center;
-                  align-item:center;
-                  width:400px;
-                  margin-top:100px;
-                  margin-botton:10px;
-                  font-size:15px;
-                  font-family:Raleway;      
-                  color:rgb(210,30,30);
-                  transition:0.5s;
-              }
-                     @media screen and (min-width:480px){
-                              .alone-txt2{
-                          display:flex;
-                  justify-content:center;
-                  align-item:center;
-                  width:1000px;
-                  margin-top:200px;
-                  margin-botton:10px;
-                  font-size:50px;
-                  font-family:Raleway;      
-                  color:rgb(210,30,30);
-                  transition:0.5s;
-              }
-              }
-              
-              .alone-txt2:hover{
-                  font-size:20px;
-                  color:tomato;
-              }
-                     @media screen and (min-width:480px){
-                            alone-txt2:hover{
-                  font-size:60px;
-                  color:tomato;
-              }
-                        }
-              .alone-txt3{
-                             display:flex;
-                  justify-content:center;
-                  align-item:center;
-                  width:400px;
-                  margin-top:50px;
-                  margin-bottom:50px;
-                  font-size:15px;        
-                  font-family:Raleway;      
-                  background: linear-gradient(to right, #e12130,
-                    #ee3b01, #ef22ef, #ffdd44);
-            -webkit-text-fill-color: transparent;
-            -webkit-background-clip: text;
-              }
-                     @media screen and (min-width:480px){
-                            .alone-txt3{
-                             display:flex;
-                  justify-content:center;
-                  align-item:center;
-                  width:1000px;
-                  margin-top:50px;
-                  font-size:35px;        
-                  font-family:Raleway;      
-                      color:white;
-              }
-                        }
-                        
-              .alone-txt3-link{
-              margin-left:5px;
-              }
-                     @media screen and (min-width:480px){
-                                      .alone-txt3-link{
-              margin-left:10px;
-              }
-                        }
-              .alone-txt3-link:hover{
-                  text-decoration:underline;
-              }
-                     @media screen and (min-width:480px){
-                            alone-txt3-link:hover{
-                  text-decoration:underline;
-              }
-                        }
-            
-                 .contact1-div{     
-                  width:400px;  
-              }
-                     @media screen and (min-width:480px){
-                                     .contact1-div{     
-                  width:1000px;  
-              }
-              }
-      
-              .email-div{
-                  display:flex;
-                  flex-direction:row;
-                  width:400px;
-                  justify-content:space-between;
-                  
-              }
-                     @media screen and (min-width:480px){
-                                    .email-div{
-                  display:flex;
-                  flex-direction:row;
-                  width:1000px;
-                  justify-content:space-between;
-                     }      
-                        }
-              .sub-txt{
-              width:100px;
-               font-family:Raleway;   
-               line-height:10px;
-               font-size:8px;
-               line-spacing:4px;
-               color:white;
-              }
-                     @media screen and (min-width:480px){
-                              .sub-txt{
-              width:350px;
-               font-family:Raleway;   
-                   color:white;
-               line-height:30px;
-               font-size:25px;
-               line-spacing:20px;
-              }
-                        }
-              .email-box{
-              font-family:Raleway;   
-              background-color:#ebebeb;
-              font-size:10px;
-                  padding-top:10px;
-                  padding-bottom:10px;
-                  padding-left:10px;
-                  padding-right:40px;
-                  border:none;
-              }
-                     @media screen and (min-width:480px){
-                                .email-box{
-              font-family:Raleway;   
-              background-color:#ebebeb;
-              font-size:20px;
-                  padding-top:15px;
-                  padding-bottom:15px;
-                  padding-left:15px;
-                  padding-right:150px;
-                  border:none;
-              }
-
-                        }
-              .placeholder{
-                    font-family:Raleway;   
-                  font-size:10px;
-                  color:black;
-              }
-                     @media screen and (min-width:480px){
-                                       .placeholder{
-                    font-family:Raleway;   
-                  font-size:15px;
-                  color:black;
-              }
-                        }
-              .submit-box{
-                       font-family:Raleway;   
-              background-color:#f2c446;
-              font-size:10px;
-              color:white;
-              font-weight:500;
-                  padding-top:10px;
-                  padding-bottom:10px;
-                  padding-left:15px;
-                  padding-right:15px;
-                  border:none;
-                  margin-left:-5px;  
-              }
-                     @media screen and (min-width:480px){
-                                .submit-box{
-                       font-family:Raleway;   
-              background-color:#f2c446;
-              font-size:20px;
-              color:white;
-              font-weight:500;
-                  padding-top:15px;
-                  padding-bottom:15px;
-                  padding-left:25px;
-                  padding-right:25px;
-                  border:none;
-                  margin-left:-5px;  
-              }
-          }
-          
-              .contact-total{
-                  display:flex;
-                  flex-direction:row;
-              width:400px;
-                  margin-top:10px;    
-                  border-top:1px solid white;    
-              }
-                     @media screen and (min-width:480px){
-                                .contact-total{
-                  display:flex;
-                  flex-direction:row;
-              width:1000px;
-                  margin-top:10px              
-              }
-                        }
-                        
-              .contact-div{   
-              display:flex;  
-                    width:400px;     
-                  align-items:end;   
-                  margin-bottom:10px;   
-              }
-                     @media screen and (min-width:480px){
-                                .contact-div{   
-              display:flex;  
-                    width:300px;     
-                  align-items:end;   
-                  margin-bottom:10px;   
-              }                        
-                        }
-              
-              .phone-txt{
-              color:white;
-              font-size:10px;
-                  font-family:Raleway;
-                  margin-top:5px;
-              }
-                     @media screen and (min-width:480px){
-                              .phone-txt{
-                    font-size:30px;
-                        color:white;
-                  font-family:Raleway;
-                  margin-top:5px;
-              }
-                        }
-                        
-              .email2-txt{
-              color:white;
-              font-size:10px;
-                  font-family:Raleway;
-                  margin-top:5px;
-              }
-                     @media screen and (min-width:480px){
-                             .email2-txt{
-                                 color:white;
-                 font-size:30px;
-                  font-family:Raleway;
-                  margin-top:5px;
-              }
-                        }
-                        
-              .contact-div1{        
-                  display:flex;  
-                  justify-content:space-between;
-                    width:400px;            
-           }
-                  @media screen and (min-width:480px){
-                              .contact-div1{        
-                  display:flex;  
-                  justify-content:space-between;
-                    width:1000px;            
-           }
-                        }
-                        
-           .Home-at-bottom{
-               display:flex;
-               flex-direction:column;
-              width:100px;
-           }
-                  @media screen and (min-width:480px){
-                               .Home-at-bottom{
-               display:flex;
-               flex-direction:column;
-              width:250px;
-           }
-                        }
-                        
-           .Customer-service-div{
-                display:flex;
-               flex-direction:column;
-               width:130px;
-           }
-                  @media screen and (min-width:480px){
-                              .Customer-service-div{
-                display:flex;
-               flex-direction:column;
-               width:300px;
-           }            
-                        }
-                        
-                .Social-div{
-                display:flex;
-               flex-direction:column;
-               width:70px;
-               }
-                      @media screen and (min-width:480px){
-                            .Social-div{
-                display:flex;
-               flex-direction:column;
-               width:250px;
-               }
-                        }
-                        
-               .bottom1-head{
-               font-size:12px;
-                   color:rgb(163, 240, 255);
-                   margin-bottom:10px;
-                   margin-top:10px;
-               }
-                      @media screen and (min-width:480px){
-                            .bottom1-head{
-               font-size:20px;
-                      color:rgb(163, 240, 255);
-                   margin-bottom:10px;
-               }
-                        }
-                        
-               .bottom2{
-                   color:white;
-                   font-size:10px;
-                   font-family:Raleway;
-                   margin-top:5px;
-                   margin-bottom:10px;
-                   font-weight:500;
-                   cursor:pointer;
-               }
-               .bottom2:hover{
-                   color:rgb(161, 255, 213);
-               }
-                      @media screen and (min-width:480px){
-                            .bottom2{
-                       color:white;
-                   font-size:30px;
-                   font-family:Raleway;
-                   margin-top:5px;
-                   margin-bottom:10px;
-                   font-weight:500;
-                   cursor:pointer;
-               }
-               .bottom2:hover{
-                   color:rgb(161, 255, 213);
-               }
-                        }
-                        
-               .social-icon{
-                      display:flex;
-               flex-direction:column; 
-               margin-top:10px;
-               }
-                        @media screen and (min-width:480px){
-               .social-icon{
-                      display:flex;
-               flex-direction:column; 
-               margin-top:10px;
-               }                          
-                        }
-                           
-              .fa{ 
-                   font-size: 20px;
-                   width: 20px;
-                  text-align: center;
-                  text-decoration: none;
-                  margin: 5px 2px;
-                  color:white;
-                    }
-               .fa-pinterest:hover {
-               color:red;
-               }              
-              .fa-facebook:hover{
-                   color:dodgerblue;
-               }
-               .fa-twitter:hover{
-                   color:deepskyblue;
-               }
-               .fa-instagram:hover{
-                   color:gold;
-               }
-               
-               @media screen and (min-width:480px)
-               {
-                    .fa{ 
-                   font-size: 50px;
-                   width: 50px;
-                  text-align: center;
-                  text-decoration: none;
-                  margin: 5px 2px;
-                      color:white;
-                    }
-                 .fa-pinterest:hover {
-               color:red;
-               }              
-              .fa-facebook:hover{
-                   color:dodgerblue;
-               }
-               .fa-twitter:hover{
-                   color:deepskyblue;
-               }
-               .fa-instagram:hover{
-                   color:gold;
-               }
-               }
-            
-
-  
-</style>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;1,300&display=swap" rel="stylesheet">
+</head>
 <body>
-    
-    <div class="whole">      
-          <div class="top">
-          
-          <div class="top-left">
-              <div class="top-l1">SALE</div>
-              <div class="top-l2">SHOP</div>
-              <div class="top-l3">OUR STORY</div>
-              <div class="top-l4">CUSTOMERS</div>
-              <div class="top-l5">BLOG</div>
-              </div>
-              
-        <div class="top-img-center">            
-        <img src=        alt=img>            
-            </div>
-            
+    <div class="hamburger" id="hamburger-menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    <div class="sidebar" id="sidebar">
+        <div class="top-left">
+            <div class="top-l1">SALE</div>
+            <div class="top-l2">SHOP</div>
+            <div class="top-l3">OUR STORY</div>
+            <div class="top-l4">CUSTOMERS</div>
+            <div class="top-l5">BLOG</div>
+        </div>
         <div class="top-right">
             <div class="top-r1">FAQ</div>
             <div class="top-r2">CONTACT</div>
             <div class="top-r3">MY CART</div>
-            <div >              
-            <img class="cart-icon" src="https://images.rawpixel.com/image_350/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL2pvYjE0MjgtZWxlbWVudC0xMTdfMS5qcGc.jpg">                
-           </div>
-               <div class="profile">               
-           <img src=>               
-               </div>               
+            <div>
+                <img class="cart-icon" src="https://images.rawpixel.com/image_350/cHJpdmF0ZS9zci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL2pvYjE0MjgtZWxlbWVudC0xMTdfMS5qcGc.jpg" alt="cart icon">                
+            </div>
+            <div class="profile">               
+                <img src="YOUR_PROFILE_IMAGE_URL_HERE" alt="profile">               
+            </div>               
+        </div>
+    </div>
+
+    <div class="whole">      
+        <div class="top">
+            <div class="top-left">
+                <div class="top-l1">SALE</div>
+                <div class="top-l2">SHOP</div>
+                <div class="top-l3">OUR STORY</div>
+                <div class="top-l4">CUSTOMERS</div>
+                <div class="top-l5">BLOG</div>
+            </div>
+            <div class="top-img-center">            
+                <img src="YOUR_IMAGE_URL_HERE" alt="img">            
+            </div>
+            <div class="top-right">
+                <div class="top-r1">FAQ</div>
+                <div class="top-r2">CONTACT</div>
+                <div class="top-r3">MY CART</div>
+                <div>
+                    <img class="cart-icon" src="https://images.rawpixel.com/image_350/cHJpdmF0ZS9zci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL2pvYjE0MjgtZWxlbWVudC0xMTdfMS5qcGc.jpg" alt="cart icon">                
+                </div>
+                <div class="profile">               
+                    <img src="YOUR_PROFILE_IMAGE_URL_HERE" alt="profile">               
+                </div>               
+            </div>
         </div>
         
-          </div>
-          
-          <div class="main-div">
-          <div class="big-img">
-              <img class="big-img-img" src="https://www.bhg.com/thmb/7uIpZUz4TDpVHeazZ6ZzMCC-rc4=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/english-ivy-plants-floating-shelf-394600cb-2892997e95684bcf91d57be17ecd9d4d.jpg">
-          </div>
-          <div class="pic-txt">
-                <div class="big-img-txt">IN TUNE WITH THE ARTS</div>                 
-          </div>          
-           <div class="big-img-button"> 
-            <a href=# class="shop-button">SHOP NOW</a></div>     
-        </div>                 
-    
-    
-          <div class="dnd-img">
-            <img  class="big-img2 "src="https://images.unsplash.com/photo-1540574163026-643ea20ade25?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y291Y2h8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=700&q=60">
+        <div class="main-div">
+            <div class="big-img">
+                <img class="big-img-img" src="https://www.bhg.com/thmb/7uIpZUz4TDpVHeazZ6ZzMCC-rc4=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/english-ivy-plants-floating-shelf-394600cb-2892997e95684bcf91d57be17ecd9d4d.jpg" alt="big image">
+            </div>
+            <div class="pic-txt">
+                <div class="big-img-txt">IN 
+                    <p>TUNE  WITH THE ARTS</p></div>                 
+            </div>          
+            <div class="big-img-button"> 
+                <a href="#" class="shop-button">SHOP NOW</a>
+            </div>     
+        </div>     
+
+        <div class="dnd-img">
+            <img class="big-img2" src="https://images.unsplash.com/photo-1540574163026-643ea20ade25?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y291Y2h8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=700&q=60" alt="new arrivals">
             <div class="cover-text">
                 <div class="cover-1">- NEW ARRIVALS</div>
                 <div class="cover-2">SUMMER 18 COLLECTIONS</div>
                 <div class="cover-button">                    
-             <button class="cover-butt">SHOP NOW</button></div>
+                    <button class="cover-butt">SHOP NOW</button>
+                </div>
             </div>
         </div>
-        
-        
+
         <div class="mul-img">
-              <div class="img1-grid">
-              <img class="img-1" src="https://images.unsplash.com/photo-1575501265016-ae78c708a09c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y291Y2h8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=700&q=60">
-              <button class="img1-text-button">CREATIVE-IDEAS</button>
-          </div>
-          <div class="img1-grid">
-              <img class="img-1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6qUwZTTusXZZIzL3w-xn2UwHOaCByRJtIXQ&usqp=CAU">          
-       <button class="img1-text-button">HOME DECOR</button> 
-          </div>
-          <div class="img1-grid">
-              <img class="img-1"
-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2cVYVnFBHgluS_abcGR-s-iZ7n9y46fElnA&usqp=CAU">  
-     <button class="img1-text-button">THROW + PILLOWS</button>
-          </div>
-          <div class="img1-grid">
-              <img class="img-1"
-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSKycdRyD8UcifZT4dgZ4vBGvYOaGLiaK2_w&usqp=CAU">        
-          <button class="img1-text-button">QUILTS</button>
-          </div>
-    
-          </div>
- 
-     
-    <div class="alone-txt2">
-            COMMUNITY
+            <div class="img1-grid">
+                <img class="img-1" src="https://images.unsplash.com/photo-1575501265016-ae78c708a09c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y291Y2h8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=700&q=60" alt="creative ideas">
+                <button class="img1-text-button">CREATIVE-IDEAS</button>
+            </div>
+            <div class="img1-grid">
+                <img class="img-1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6qUwZTTusXZZIzL3w-xn2UwHOaCByRJtIXQ&usqp=CAU" alt="home decor">          
+                <button class="img1-text-button">HOME DECOR</button> 
+            </div>
+            <div class="img1-grid">
+                <img class="img-1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2cVYVnFBHgluS_abcGR-s-iZ7n9y46fElnA&usqp=CAU" alt="throw pillows">  
+                <button class="img1-text-button">THROW + PILLOWS</button>
+            </div>
+            <div class="img1-grid">
+                <img class="img-1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSKycdRyD8UcifZT4dgZ4vBGvYOaGLiaK2_w&usqp=CAU" alt="quilts">        
+                <button class="img1-text-button">QUILTS</button>
+            </div>
         </div>
  
-       <div class="alone-txt3">
-         SHOP OUR INSTAGRAM  
-      <span class="alone-txt3-link">
-            &#64;SOULANDLANE
-      </span>  
-       </div>
+        <div class="alone-txt2">COMMUNITY</div>
+ 
+        <div class="alone-txt3">
+            SHOP OUR INSTAGRAM  
+            <span class="alone-txt3-link">&#64;SOULANDLANE</span>  
+        </div>
     
-      <div class="contact1-div">
-   
-       <div class="email-div">      
-        
-           <div class="sub-txt">
-               SUBSCRIBE TO GET NEWS AND UPDATES TO YOUR INBOX EVERY WEEK
-           </div>
-           <div class="email">
-               <input class="email-box" type="email" placeholder="EMAIL ADDRESS">
-               <button class="submit-box ">SIGN UP</button>               
-           </div>
-           
-       </div> 
-       
-          
-             
-       <div class="contact-total">
-         
-           <div class="contact-div">
-                            <div class="logo-div">
-            <div class="img-4">
-<img src="">
-            </div>
-                   <div class="img-4-txt">
-                        <div class="phone-txt">
-                           +1(224) 123-5678
-                     </div>
-             <div class="email2-txt">
-                  SUPPORT@ SOULANDLANE.COM
-              </div>
-                   </div>
-                    </div>                                    
-       </div>
-               <div class="contact-div1">    
-                    <div class="Home-at-bottom">
-                        <div class="bottom1-head">
-                            SOUL & LANE
+        <div class="contact1-div">
+            <div class="email-div">      
+                <div class="sub-txt">SUBSCRIBE TO GET NEWS AND UPDATES TO YOUR INBOX EVERY WEEK</div>
+                <div class="email">
+                    <input class="email-box" type="email" placeholder="EMAIL ADDRESS">
+                    <button class="submit-box">SIGN UP</button>               
+                </div>
+            </div> 
+            <div class="contact-total">
+                <div class="contact-div">
+                    <div class="logo-div">
+                        <div class="img-4">
+                            <img src="YOUR_LOGO_IMAGE_URL_HERE" alt="logo">
                         </div>
-                         <div class="bottom2">
-                             HOME
-                         </div>
-                         <div class="bottom2">
-                             SHOP
-                         </div>
-                         <div class="bottom2">
-                             OUR STORY
-                         </div>
-                          <div class="bottom2">
-                              CUSTOMERS
-                          </div>
-                          <div class="bottom2">
-                              BLOG
-                          </div>                          
-              </div>
+                        <div class="img-4-txt">
+                            <div class="phone-txt">+1(224) 123-5678</div>
+                            <div class="email2-txt">SUPPORT@SOULANDLANE.COM</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-div1">    
                     
-              <div class="Customer-service-div">
-                        <div class="bottom1-head">
-                            CUSTOMER SERVICE
-                        </div>
-                         <div class="bottom2">
-                             MY CART
-                         </div>
-                         <div class="bottom2">
-                             SHIPPING
-                         </div>
-                         <div class="bottom2">
-                             RETURN POLICY
-                         </div>
-                          <div class="bottom2">
-                               FAQ
-                          </div>
-                          <div class="bottom2">
-                              CONTACT
-                          </div>    
-             </div>  
-              
-         <div class="Social-div"> 
-                        <div class="bottom1-head">
-                            SOCIALS
-                        </div>
-                                <div class="social-icon">
-                           <div>
-                         <a href="#" class="fa fa-twitter"></a>
-                         </div>
-                         <div >
+                    <div class="Customer-service-div">
+                        <div class="bottom1-head">CUSTOMER SERVICE</div>
+                        <div class="bottom2">MY CART</div>
+                        <div class="bottom2">SHIPPING</div>
+                        <div class="bottom2">RETURN POLICY</div>
+                        <div class="bottom2">FAQ</div>
+                        <div class="bottom2">CONTACT</div>    
+                    </div>  
+                    <div class="Social-div"> 
+                        <div class="bottom1-head">SOCIALS</div>
+                        <div class="social-icon">
+                            <a href="#" class="fa fa-twitter"></a>
                             <a href="#" class="fa fa-instagram"></a>
-                         </div>
-                          <div>
-                              <a href="#" class="fa fa-facebook"></a>
-                          </div>
-                          <div>
+                            <a href="#" class="fa fa-facebook"></a>
                             <a href="#" class="fa fa-pinterest"></a>
-                                </div>        
-         </div>    
-               
-                </div>   
-          
-    
-    
-    
-    
+                        </div>        
+                    </div>   
+                </div>
+            </div>
+        </div>
     </div>
+    <script src="script.js"></script>
 </body>
-    </html>
+</html>
